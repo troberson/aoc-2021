@@ -1,4 +1,4 @@
-name: aoc-01b
+name: aoc-01a
 version: 0.1.0.0
 github: 'troberson/aoc-2021'
 license: MIT
@@ -8,7 +8,7 @@ copyright: '2021 Tamara Roberson'
 
 extra-source-files: README.md
 
-description: Please see the README on GitHub at <https://github.com/troberson/aoc-2021/Day%2001/Day%2001b/Haskell#readme>
+description: Please see the README on GitHub at <https://github.com/troberson/aoc-2021/day_01/day_01a/Haskell#readme>
 
 dependencies:
   - base >= 4.7 && < 5
@@ -18,7 +18,7 @@ library:
   source-dirs: src
 
 executables:
-  aoc-01b-exe:
+  aoc-01a-exe:
     main: Main.hs
     source-dirs: app
     ghc-options:
@@ -26,10 +26,10 @@ executables:
       - -rtsopts
       - -with-rtsopts=-N
     dependencies:
-      - aoc-01b
+      - aoc-01a
 
 tests:
-  aoc-01b-test:
+  aoc-01a-test:
     main: Spec.hs
     source-dirs: test
     ghc-options:
@@ -37,4 +37,4 @@ tests:
       - -rtsopts
       - -with-rtsopts=-N
     dependencies:
-      - aoc-01b
+      - aoc-01a
