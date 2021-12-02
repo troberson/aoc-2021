@@ -1,0 +1,40 @@
+name: aoc-01b
+version: 0.1.0.0
+github: 'troberson/aoc-2021'
+license: MIT
+author: 'Tamara Roberson'
+maintainer: 'tamara.roberson@wsu.edu'
+copyright: '2021 Tamara Roberson'
+
+extra-source-files: README.md
+
+description: Please see the README on GitHub at <https://github.com/troberson/aoc-2021/Day%2001/Day%2001b/Haskell#readme>
+
+dependencies:
+  - base >= 4.7 && < 5
+  - hspec > 2.7
+
+library:
+  source-dirs: src
+
+executables:
+  aoc-01b-exe:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - aoc-01b
+
+tests:
+  aoc-01b-test:
+    main: Spec.hs
+    source-dirs: test
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - aoc-01b
